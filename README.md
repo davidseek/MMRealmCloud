@@ -7,6 +7,7 @@ The goal of this project is to determine and expose best practices for using Rea
 ## Example
 
 To run the example:
+- run `pod install`
 - Enable CloudKit in the project iCloud settings
 - Run project
   - `+` to add a new item
