@@ -4,6 +4,16 @@
 
 The goal of this project is to determine and expose best practices for using Realm and CloudKit together. Realm is a fantastic local storage solution for iOS. CloudKit is an essentially free cloud storage solution.
 
+## Example
+
+To run the example:
+- Enable CloudKit in the project iCloud settings
+- Run project
+  - `+` to add a new item
+  - `Sync` executes a `SyncOperation` consisting of a `PushLocalChangesOperation` followed by `FetchCloudChangesOperation`
+  - `Push` executes only a `PushLocalChangesOperation`
+  - `Fetch` executes only a `FetchCloudChangesOperation`
+
 ## Limitations
 
 - The project currently only supports storing data in the private database

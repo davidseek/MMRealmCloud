@@ -6,6 +6,8 @@
 .Trashes
 *.swp
 
+*.entitlements
+
 ## Build generated
 build/
 DerivedData/

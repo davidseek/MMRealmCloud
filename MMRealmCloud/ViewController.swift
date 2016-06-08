@@ -158,7 +158,7 @@ class ViewController: UIViewController, UITableViewDelegate,
                 let note = Note()
                 note.text = "Note \(String(format: "%04X", arc4random_uniform(UInt32(UInt16.max))))"
                 note.isLocallyModified = true
-                print("add: \(note)")
+                print("add: \(note.id)")
                 realm.add(note)
             }
         } catch let realmError as NSError {
