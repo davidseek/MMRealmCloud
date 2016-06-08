@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44050C000C69E5E768DA14F3 /* Pods_MMRealmCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CC8F365C23EFA0463487621 /* Pods_MMRealmCloudTests.framework */; };
 		8CAE9B911D08B66E00236ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9B901D08B66E00236ABB /* AppDelegate.swift */; };
 		8CAE9B931D08B66E00236ABB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9B921D08B66E00236ABB /* ViewController.swift */; };
 		8CAE9B961D08B66E00236ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CAE9B941D08B66E00236ABB /* Main.storyboard */; };
 		8CAE9B981D08B66E00236ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAE9B971D08B66E00236ABB /* Assets.xcassets */; };
 		8CAE9B9B1D08B66E00236ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CAE9B991D08B66E00236ABB /* LaunchScreen.storyboard */; };
 		8CAE9BA61D08B66E00236ABB /* MMRealmCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BA51D08B66E00236ABB /* MMRealmCloudTests.swift */; };
+		8CAE9BBB1D08B71C00236ABB /* AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB01D08B71C00236ABB /* AlertOperation.swift */; };
+		8CAE9BBC1D08B71C00236ABB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB11D08B71C00236ABB /* Constants.swift */; };
+		8CAE9BBE1D08B71C00236ABB /* FetchCloudChangesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB31D08B71C00236ABB /* FetchCloudChangesOperation.swift */; };
+		8CAE9BBF1D08B71C00236ABB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB41D08B71C00236ABB /* Models.swift */; };
+		8CAE9BC01D08B71C00236ABB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB51D08B71C00236ABB /* Note.swift */; };
+		8CAE9BC11D08B71C00236ABB /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB61D08B71C00236ABB /* NoteCell.swift */; };
+		8CAE9BC21D08B71C00236ABB /* PrepareZoneOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB71D08B71C00236ABB /* PrepareZoneOperation.swift */; };
+		8CAE9BC31D08B71C00236ABB /* PushLocalChangesOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB81D08B71C00236ABB /* PushLocalChangesOperation.swift */; };
+		8CAE9BC41D08B71C00236ABB /* RealmCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BB91D08B71C00236ABB /* RealmCloud.swift */; };
+		8CAE9BC51D08B71C00236ABB /* SyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAE9BBA1D08B71C00236ABB /* SyncOperation.swift */; };
+		9ACD3B87D3A29F303C23182D /* Pods_MMRealmCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD4CD2E486D317C960177EA /* Pods_MMRealmCloud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13104A8944D29BE287AFB49B /* Pods-MMRealmCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRealmCloudTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMRealmCloudTests/Pods-MMRealmCloudTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CC8F365C23EFA0463487621 /* Pods_MMRealmCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMRealmCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD4CD2E486D317C960177EA /* Pods_MMRealmCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMRealmCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		491C270602C8CC6455BDDD56 /* Pods-MMRealmCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRealmCloud.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMRealmCloud/Pods-MMRealmCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		4BBE0ED7F48BACE71062C163 /* Pods-MMRealmCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRealmCloudTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMRealmCloudTests/Pods-MMRealmCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		775CEDE6E23BD2B9078E4E1F /* Pods-MMRealmCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMRealmCloud.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMRealmCloud/Pods-MMRealmCloud.release.xcconfig"; sourceTree = "<group>"; };
 		8CAE9B8D1D08B66E00236ABB /* MMRealmCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMRealmCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAE9B901D08B66E00236ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CAE9B921D08B66E00236ABB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +54,16 @@
 		8CAE9BA11D08B66E00236ABB /* MMRealmCloudTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMRealmCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAE9BA51D08B66E00236ABB /* MMRealmCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMRealmCloudTests.swift; sourceTree = "<group>"; };
 		8CAE9BA71D08B66E00236ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CAE9BB01D08B71C00236ABB /* AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOperation.swift; sourceTree = "<group>"; };
+		8CAE9BB11D08B71C00236ABB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8CAE9BB31D08B71C00236ABB /* FetchCloudChangesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchCloudChangesOperation.swift; sourceTree = "<group>"; };
+		8CAE9BB41D08B71C00236ABB /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8CAE9BB51D08B71C00236ABB /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8CAE9BB61D08B71C00236ABB /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		8CAE9BB71D08B71C00236ABB /* PrepareZoneOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrepareZoneOperation.swift; sourceTree = "<group>"; };
+		8CAE9BB81D08B71C00236ABB /* PushLocalChangesOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushLocalChangesOperation.swift; sourceTree = "<group>"; };
+		8CAE9BB91D08B71C00236ABB /* RealmCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCloud.swift; sourceTree = "<group>"; };
+		8CAE9BBA1D08B71C00236ABB /* SyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACD3B87D3A29F303C23182D /* Pods_MMRealmCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +79,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44050C000C69E5E768DA14F3 /* Pods_MMRealmCloudTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AAEE5F501F63B0F9586958 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				491C270602C8CC6455BDDD56 /* Pods-MMRealmCloud.debug.xcconfig */,
+				775CEDE6E23BD2B9078E4E1F /* Pods-MMRealmCloud.release.xcconfig */,
+				4BBE0ED7F48BACE71062C163 /* Pods-MMRealmCloudTests.debug.xcconfig */,
+				13104A8944D29BE287AFB49B /* Pods-MMRealmCloudTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4331C462DDB00EEC1A948534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FD4CD2E486D317C960177EA /* Pods_MMRealmCloud.framework */,
+				1CC8F365C23EFA0463487621 /* Pods_MMRealmCloudTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8CAE9B841D08B66E00236ABB = {
 			isa = PBXGroup;
 			children = (
 				8CAE9B8F1D08B66E00236ABB /* MMRealmCloud */,
 				8CAE9BA41D08B66E00236ABB /* MMRealmCloudTests */,
 				8CAE9B8E1D08B66E00236ABB /* Products */,
+				35AAEE5F501F63B0F9586958 /* Pods */,
+				4331C462DDB00EEC1A948534 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +129,10 @@
 		8CAE9B8F1D08B66E00236ABB /* MMRealmCloud */ = {
 			isa = PBXGroup;
 			children = (
-				8CAE9B901D08B66E00236ABB /* AppDelegate.swift */,
-				8CAE9B921D08B66E00236ABB /* ViewController.swift */,
-				8CAE9B941D08B66E00236ABB /* Main.storyboard */,
-				8CAE9B971D08B66E00236ABB /* Assets.xcassets */,
-				8CAE9B991D08B66E00236ABB /* LaunchScreen.storyboard */,
-				8CAE9B9C1D08B66E00236ABB /* Info.plist */,
+				8CAE9BC71D08B74500236ABB /* Example */,
+				8CAE9BC61D08B72700236ABB /* Operations */,
+				8CAE9BB41D08B71C00236ABB /* Models.swift */,
+				8CAE9BB91D08B71C00236ABB /* RealmCloud.swift */,
 			);
 			path = MMRealmCloud;
 			sourceTree = "<group>";
@@ -96,6 +146,34 @@
 			path = MMRealmCloudTests;
 			sourceTree = "<group>";
 		};
+		8CAE9BC61D08B72700236ABB /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE9BBA1D08B71C00236ABB /* SyncOperation.swift */,
+				8CAE9BB71D08B71C00236ABB /* PrepareZoneOperation.swift */,
+				8CAE9BB31D08B71C00236ABB /* FetchCloudChangesOperation.swift */,
+				8CAE9BB81D08B71C00236ABB /* PushLocalChangesOperation.swift */,
+				8CAE9BB01D08B71C00236ABB /* AlertOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		8CAE9BC71D08B74500236ABB /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE9BB11D08B71C00236ABB /* Constants.swift */,
+				8CAE9BB51D08B71C00236ABB /* Note.swift */,
+				8CAE9BB61D08B71C00236ABB /* NoteCell.swift */,
+				8CAE9B921D08B66E00236ABB /* ViewController.swift */,
+				8CAE9B901D08B66E00236ABB /* AppDelegate.swift */,
+				8CAE9B941D08B66E00236ABB /* Main.storyboard */,
+				8CAE9B971D08B66E00236ABB /* Assets.xcassets */,
+				8CAE9B991D08B66E00236ABB /* LaunchScreen.storyboard */,
+				8CAE9B9C1D08B66E00236ABB /* Info.plist */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CAE9BAA1D08B66E00236ABB /* Build configuration list for PBXNativeTarget "MMRealmCloud" */;
 			buildPhases = (
+				29E042A41AC2FE0FF6F315DD /* [CP] Check Pods Manifest.lock */,
 				8CAE9B891D08B66E00236ABB /* Sources */,
 				8CAE9B8A1D08B66E00236ABB /* Frameworks */,
 				8CAE9B8B1D08B66E00236ABB /* Resources */,
+				7471991B255A49E31C2C1142 /* [CP] Embed Pods Frameworks */,
+				E364D2E9900BB5BF3335888E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8CAE9BAD1D08B66E00236ABB /* Build configuration list for PBXNativeTarget "MMRealmCloudTests" */;
 			buildPhases = (
+				1CB93B7AB3B0326E653D61A3 /* [CP] Check Pods Manifest.lock */,
 				8CAE9B9D1D08B66E00236ABB /* Sources */,
 				8CAE9B9E1D08B66E00236ABB /* Frameworks */,
 				8CAE9B9F1D08B66E00236ABB /* Resources */,
+				AFEF498CA6EF00E3D9DF6B8B /* [CP] Embed Pods Frameworks */,
+				61BC068F70C760FD5167410F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,13 +276,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB93B7AB3B0326E653D61A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		29E042A41AC2FE0FF6F315DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		61BC068F70C760FD5167410F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMRealmCloudTests/Pods-MMRealmCloudTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7471991B255A49E31C2C1142 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMRealmCloud/Pods-MMRealmCloud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEF498CA6EF00E3D9DF6B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMRealmCloudTests/Pods-MMRealmCloudTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E364D2E9900BB5BF3335888E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMRealmCloud/Pods-MMRealmCloud-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8CAE9B891D08B66E00236ABB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAE9BC51D08B71C00236ABB /* SyncOperation.swift in Sources */,
+				8CAE9BC21D08B71C00236ABB /* PrepareZoneOperation.swift in Sources */,
 				8CAE9B931D08B66E00236ABB /* ViewController.swift in Sources */,
+				8CAE9BBE1D08B71C00236ABB /* FetchCloudChangesOperation.swift in Sources */,
+				8CAE9BC31D08B71C00236ABB /* PushLocalChangesOperation.swift in Sources */,
+				8CAE9BC01D08B71C00236ABB /* Note.swift in Sources */,
 				8CAE9B911D08B66E00236ABB /* AppDelegate.swift in Sources */,
+				8CAE9BC41D08B71C00236ABB /* RealmCloud.swift in Sources */,
+				8CAE9BBB1D08B71C00236ABB /* AlertOperation.swift in Sources */,
+				8CAE9BC11D08B71C00236ABB /* NoteCell.swift in Sources */,
+				8CAE9BBC1D08B71C00236ABB /* Constants.swift in Sources */,
+				8CAE9BBF1D08B71C00236ABB /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +514,7 @@
 		};
 		8CAE9BAB1D08B66E00236ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491C270602C8CC6455BDDD56 /* Pods-MMRealmCloud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMRealmCloud/Info.plist;
@@ -338,6 +526,7 @@
 		};
 		8CAE9BAC1D08B66E00236ABB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 775CEDE6E23BD2B9078E4E1F /* Pods-MMRealmCloud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMRealmCloud/Info.plist;
@@ -349,6 +538,7 @@
 		};
 		8CAE9BAE1D08B66E00236ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBE0ED7F48BACE71062C163 /* Pods-MMRealmCloudTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MMRealmCloudTests/Info.plist;
@@ -361,6 +551,7 @@
 		};
 		8CAE9BAF1D08B66E00236ABB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13104A8944D29BE287AFB49B /* Pods-MMRealmCloudTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MMRealmCloudTests/Info.plist;
@@ -390,6 +581,7 @@
 				8CAE9BAC1D08B66E00236ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CAE9BAD1D08B66E00236ABB /* Build configuration list for PBXNativeTarget "MMRealmCloudTests" */ = {
 			isa = XCConfigurationList;
@@ -398,6 +590,7 @@
 				8CAE9BAF1D08B66E00236ABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

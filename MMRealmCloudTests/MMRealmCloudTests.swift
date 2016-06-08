@@ -1,11 +1,3 @@
-//
-//  MMRealmCloudTests.swift
-//  MMRealmCloudTests
-//
-//  Created by Mike on 6/8/16.
-//  Copyright © 2016 Mike Mac. All rights reserved.
-//
-
 import XCTest
 @testable import MMRealmCloud
 
