@@ -2,7 +2,9 @@
 
 ## Motivation
 
-The goal of this project is to determine and expose best practices for using Realm and CloudKit together. Realm is a fantastic local storage solution for iOS. CloudKit is an essentially free cloud storage solution.
+The goal of this project is to determine and expose best practices for using Realm and CloudKit together.
+- Realm: A fantastic local storage solution
+- CloudKit: Apple's essentially free cloud storage service
 
 ## Example
 
@@ -27,7 +29,7 @@ To run the example:
 ### Important
 - [x] NSOperation subclassed Sync, Push and Fetch operations
 - [x] Convenience functions for interfacing between Realm and CloudKit
-- [ ] Add builtin reflection to  `RealmCloudObject` so custom properties don't need to be specified in convenience functions.
+- [ ] Add builtin reflection to  `RealmCloudObject` so custom properties don't need to be specified in Object to CKRecord mapping functions
 - [ ] Handle additional CloudKit error cases:
   - [ ] .ChangeTokenExpired
   - [ ] .UnknownItem
@@ -45,15 +47,13 @@ To run the example:
 
 - Enable CloudKit in your project capabilities. Details on how to do this are available at [apple](https://developer.apple.com/library/ios/documentation/DataManagement/Conceptual/CloudKitQuickStart/EnablingiCloudandConfiguringCloudKit/EnablingiCloudandConfiguringCloudKit.html) and  [shinobicontrols](https://www.shinobicontrols.com/blog/ios8-day-by-day-day-33-cloudkit).
 
-- Extend base Realm `Object` classes using `RealmCloudObject`
-- Define class fields
+- Extend base Realm `Object` classes using `RealmCloudObject` and define custom class fields
 
 ```Swift
 // Note.swift
-
 class Note: Object, RealmCloudObject {
 
-  // Define class fields.
+  // Define class fields
   dynamic var text = ""
   dynamic var dateModified = NSDate()
 
@@ -62,11 +62,10 @@ class Note: Object, RealmCloudObject {
 }
 ```
 
-- Modify the toRecord() function with the desired class fields. This function is used when sending records to CloudKit. (TODO: automate this using reflection)
+- Modify the toRecord() function with the desired class fields. This function is used when sending records to CloudKit. (TODO: automate this using reflection on `cloudKeys` dictionary)
 
 ```Swift
 // Note.swift
-
 func toRecord() -> CKRecord {
   ...
   record["text"] = self.text
@@ -78,7 +77,6 @@ func toRecord() -> CKRecord {
 
 ```Swift
 // Note.swift
-
 func saveSystemFields(record: CKRecord) {
   ...
                 realm.create(Note.self,
@@ -86,20 +84,21 @@ func saveSystemFields(record: CKRecord) {
 }
 ```
 
-- Add desired class fields to changeLocalRecord() function. This function is used when receiving records from CloudKit. (TODO: automate this using reflection)
+- Add desired class fields to changeLocalRecord() function. This function is used when receiving records from CloudKit. (TODO: automate this using reflection on `cloudKeys` dictionary)
 
 ```Swift
 // Note.swift
-...
+public func changeLocalRecord(...) throws {
+  ...
+  realm.create(objectClass as! Object.Type,
+      value: ["id": id,
+          "text": text,
+          "dateModified": NSDate(),
+          "ckSystemFields": recordToLocalData(record)],
+      update: true)
 
-realm.create(objectClass as! Object.Type,
-    value: ["id": id,
-        "text": text,
-        "dateModified": NSDate(),
-        "ckSystemFields": recordToLocalData(record)],
-    update: true)
-
-...
+  ...
+}
 ```
 
 
@@ -107,7 +106,6 @@ realm.create(objectClass as! Object.Type,
 
 ```Swift
 // Constants.swift
-
 struct Constants {
     static let RecordType = "NoteType"
     static let ZoneName = "NoteZone"
@@ -120,9 +118,11 @@ The project makes heavy use of ideas from the at [Advanced NSOperations 2015 WWD
 
 ### Related Projects
 
+- [EVCloudKitDao](https://github.com/evermeer/EVCloudKitDao)
+- [Realm-JSONAPI](https://github.com/Patreon/Realm-JSONAPI)
 - [PSOperations](https://github.com/pluralsight/PSOperations)
-- [EVCloudKitDao](https://github.com/evermeer/EVCloudKitDao): I learned a lot from this project.
-- [Operations](https://github.com/danthorpe/Operations): A high level framework covering CloudKit among other things.
+- [Operations](https://github.com/danthorpe/Operations)
+
 
 
 ## License
