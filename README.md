@@ -1,8 +1,10 @@
 # MMRealmCloud
 
+Sync Realm with CloudKit. Work in progress.
+
 ## Motivation
 
-The goal of this project is to determine and expose best practices for using Realm and CloudKit together.
+The goal of this project is to determine and provide examples of the best practices for using Realm and CloudKit together.
 - Realm: A fantastic local storage solution
 - CloudKit: Apple's essentially free cloud storage service
 
@@ -122,8 +124,6 @@ The project makes heavy use of ideas from the at [Advanced NSOperations 2015 WWD
 - [Realm-JSONAPI](https://github.com/Patreon/Realm-JSONAPI)
 - [PSOperations](https://github.com/pluralsight/PSOperations)
 - [Operations](https://github.com/danthorpe/Operations)
-
-
 
 ## License
 
